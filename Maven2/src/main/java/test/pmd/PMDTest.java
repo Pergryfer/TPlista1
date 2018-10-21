@@ -7,8 +7,8 @@ public class PMDTest{
 	    PMDTest.CallStartFight();
 
 		
-	    Army Sauron = new Army("Orki Saurona",10000,4);
-	    Army Aragon = new Army("Przymierze Ludzi, krasnoludow i Elfow",8000,10);
+	    Army Sauron = new Army("Orks",10000,4);
+	    Army Aragon = new Army("Gondor",8000,10);
 	    Battle HelmowyJar = new Battle(Sauron, Aragon);
 	    try {
 			Thread.sleep(1000);
