@@ -3,9 +3,20 @@ package test.pmd;
 public class PMDTest{
 
 	public static void main(String[] args) {
-	    PMDTest.CALL_METHOD("hello");
-	    PMDTest.CallHello();
-		System.out.println("Hi Maven");
+	    PMDTest.CALL_METHOD("Fight Symulator");
+	    PMDTest.CallStartFight();
+
+		
+	    Army Sauron = new Army("Orki Saurona",10000,4);
+	    Army Aragon = new Army("Przymierze Ludzi, krasnoludow i Elfow",8000,10);
+	    Battle HelmowyJar = new Battle(Sauron, Aragon);
+	    try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    System.out.println(HelmowyJar.whoWin());
 	}
 
 
@@ -13,7 +24,7 @@ public class PMDTest{
 	    System.out.println(INPUT_PARAMETER);
 	}
 	
-	public static void CallHello() {
-		System.out.println("Hello PMD World!");
+	public static void CallStartFight() {
+		System.out.println("Battle Begins...");
 	}
 }
